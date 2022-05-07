@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies & Career Goals</title>
+
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com"
+    />
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin
+    />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+        rel="stylesheet"
+    />
+
+    <link 
+        rel="stylesheet"
+        href="./styles/common.css"
+    />
+
+</head>
+    <body>
+        <section class="showcase">
+            <header>
+                <img class="logo" src="./images/Logo.png" alt="Logo">
+                <h1>Hobbies & Career Goals</h1>
+                <div class="toggle"></div>
+            </header>
+                <div class="page-container">
+                    <img src="./images/collage.jpg" alt="Sahara Yasmin Aguilar Krompel">
+                    <p>Before I got interested in computer science, I really had no idea what I wanted to do for a career. Now that I have researched, taken some classes, and seen my mother enjoy computer science, I know that it is what I would like to do in the future. I hope to take a career path that can help me impliment all of my passions into one place. I would like to continue to pursue music and acting as side careers. Some hobbies I enjoy are watercolor painting, listening to music, reading, writing, learning about The Wild West and The Viking Age, spending time in nature, and playing video games. Some of my favorite video games are Blasphemous, Red Dead Redemption (1 and 2), and Metal Gear Solid 5.</p>
+                </div>
+        </section>
+
+        <div class="menu">
+            <div class="links-wrapper">
+                <div class="nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="about.html">About Me</a>
+                </div>
+                <div class="nav-link">
+                    <a href="hobbies-&-career-goals.html">Hobbies & Career Goals</a>
+                </div>
+                <div class="nav-link">
+                    <a href="student-choice.html">My Music Taste</a>
+                </div>
+                <div class="nav-link">
+                    <a href="internet-questions.html">About The Internet</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>

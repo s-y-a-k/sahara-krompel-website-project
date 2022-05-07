@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Taste</title>
+
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com"
+    />
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin
+    />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+        rel="stylesheet"
+    />
+    
+    <link 
+        rel="stylesheet"
+        href="./styles/common.css"
+    />
+    
+</head>
+    <body>
+        <section class="showcase">
+            <header>
+                <img class="logo" src="./images/Logo.png" alt="Logo">
+                <h1>My Music Taste</h1>
+                <div class="toggle"></div>
+            </header>
+            <div class="page-container">
+                <p>Since the very start my music taste has always been heavily influenced by what my family listens to. Because of this, my music taste is very diverse. My favorite music genres are progressive metal, death metal, black metal, flamenco, classical, bossa nova, and gypsy jazz.</p>
+                <div class="parallax" style="background-image: url(images/music.jpg);">
+                    <div class="textbox">
+                        <ul>
+                        <div class="band-link">
+                                <a href="https://www.youtube.com/watch?v=Nco_kh8xJDs">Alice In Chains</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=dM8WjgRA6o8">Between The Buried And Me</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=VTbLAEchl38">Black Crown Initiate</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=zytdM6pblJg">Car Bomb</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=xYNCY9s2Q3I">Cave In</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=CX3WTWpltbw">Chon</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=9X6A168neHI">Code Orange</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=SxmPTLCT964">Darkthrone</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=_duhhVa-dk8">Death</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=KvknOXGPzCQ">Deftones</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=i14YKs-JUHQ">Emperor</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=H0WyhJseftI">Gojira</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=nOJHbpijw3o">Job For A Cowboy</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=0G9Qd_84YZs">Leprous</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=9emO9qo4FwE">Mayhem</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=zg2076b5Lqc">Meshuggah</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=nKpIwX2P118">Opeth</a>
+                        </div>
+                        <div class="band-link">
+                            <a href="https://www.youtube.com/watch?v=GIuZUCpm9hc">Tool</a>
+                        </div>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="menu">
+            <div class="links-wrapper">
+                <div class="nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="about.html">About Me</a>
+                </div>
+                <div class="nav-link">
+                    <a href="hobbies-&-career-goals.html">Hobbies & Career Goals</a>
+                </div>
+                <div class="nav-link">
+                    <a href="student-choice.html">My Music Taste</a>
+                </div>
+                <div class="nav-link">
+                    <a href="internet-questions.html">About The Internet</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>

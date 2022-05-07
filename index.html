@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahara Yasmin Aguilar Krompel</title>
+    
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com"
+    />
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin
+    />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+        rel="stylesheet"
+    />
+    <link 
+        rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous"
+    />
+    <link 
+        rel="stylesheet" 
+        href="./styles/homepage.css"
+    />
+    
+</head>
+    <body>
+        <section class="showcase">
+            <header>
+                <img class="logo" src="./images/Logo.png" alt="Logo">
+                <div class="toggle"></div>
+            </header>
+
+            <video src="./images/Person Playing A Guitar.mp4" muted loop autoplay></video>
+
+            <div class="overlay"></div>
+
+            <div class="text">
+                <h2>Sahara Yasmin Aguilar Krompel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cum unde quidem doloremque, odit soluta rerum voluptatum obcaecati doloribus ipsum commodi illo, suscipit adipisci cupiditate fugit culpa iure expedita quod?</p>
+            </div>
+        </section>
+
+        <div class="menu">
+            <div class="links-wrapper">
+                <div class="nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="about.html">About Me</a>
+                </div>
+                <div class="nav-link">
+                    <a href="hobbies-&-career-goals.html">Hobbies & Career Goals</a>
+                </div>
+                <div class="nav-link">
+                    <a href="student-choice.html">My Music Taste</a>
+                </div>
+                <div class="nav-link">
+                    <a href="internet-questions.html">About The Internet</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>

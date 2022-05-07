@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Questions</title>
+
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com"
+    />
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin
+    />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+        rel="stylesheet"
+    />
+    
+    <link 
+        rel="stylesheet"
+        href="./styles/common.css"
+    />
+
+</head>
+    <body>
+        <section class="showcase">
+            <header>
+                <img class="logo" src="./images/Logo.png" alt="Logo">
+                <h1>About The Internet</h1>
+                <div class="toggle"></div>
+            </header>
+            <div class="page-container">
+                <img src="./images/IOT.jpeg" alt="Internet of Things">
+                <p>The Internet of Things (IOT) is the giant network of devices connected to the internet. All of these devices collect and exchange data with one another. Some examples of things connected in the Internet of Things are smart phones, smart security systems, smart home appliances, smart speakers, and ai voice assistants.</p>
+            </div>
+            <div class="page-container">
+                <img src="./images/browser.png" alt="Browser">
+                <p>Each time a browser loads a webpage, it loads and parses the HTML, which it recieves from the network. Next, it converts the HTML into a DOM (Document Object Model), which is the representation of the document in the computer's memory. After that process, the browser fetches all resources (except JavaScript) that are linked to the HTML document. The browser then parses the CSS and sorts out the different rules by their selector types and finds out which rules should be applied to which nodes in the DOM. Then the render tree is laid out and a visual display of the page is shown on the screen.</p>
+            </div>
+            <div class="page-container">
+                <img src="./images/cookies.png" alt="Cookies">
+                <p>Cookies are small bits of data that are created by a web server while a user browses a website. Cookies are used to identify your device in order to store information about your prefrences and visit to the website. Usually cookies are collected when you press accept on the pop-up message that appears when you visit a new website. Cookies can improve user experience, but can also misuse private information.</p>
+            </div>
+            <div class="page-container">
+                <img src="./images/internet.png" alt="Internet">
+                <p>The internet is a global network of billions of computers and other electronic devices. The internet works by using a packet routing network. Packets are small segments of data that gets sent over the internet. This packet routing network follows Internet Protocol (IP) and Transport Control Protocol (TCP). These are protocals for sending packets between devices. When you surf the internet, your device is connected to the web through a motem or router. When you type in a web address (URL) into your browser, your query is processed and pushed to your ISP (Internet Service Provider). The browser looks up the IP address for the domain name you typed into your browser through DNS (Domain Name Server). Then the browser sends a hypertext transfer protocol (HTTP) request to the server to send a copy of the web page to the client using TCP and IP.</p>
+            </div>
+        </section>
+
+        <div class="menu">
+            <div class="links-wrapper">
+                <div class="nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="about.html">About Me</a>
+                </div>
+                <div class="nav-link">
+                    <a href="hobbies-&-career-goals.html">Hobbies & Career Goals</a>
+                </div>
+                <div class="nav-link">
+                    <a href="student-choice.html">My Music Taste</a>
+                </div>
+                <div class="nav-link">
+                    <a href="internet-questions.html">About The Internet</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>

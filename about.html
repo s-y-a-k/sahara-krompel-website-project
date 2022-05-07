@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com"
+    />
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin
+    />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+        rel="stylesheet"
+    />
+
+    <link 
+        rel="stylesheet"
+        href="./styles/common.css"
+    />
+
+    <link 
+        rel="stylesheet" 
+        href="./styles/about.css"
+    />
+
+
+</head>
+    <body>
+        <section class="showcase">
+            <header>
+                <img class="logo" src="./images/Logo.png" alt="Logo">
+                <h1>About Me</h1>
+                <div class="toggle"></div>
+            </header>
+                <div class="page-container">
+                    <img src="./images/sahara.jpg" alt="Sahara Yasmin Aguilar Krompel">
+                    <p>Hello! I am a 10th grader at Weber Innovation High School. Coming from a family of musicians, music has always been an important part of my life. I have been studying flamenco, jazz, and classical guitar for about 6 years. I have preformed as part of the Youth Utah Classical Guitar ensemble, with Tablado Flamenco Dance Company, with Onstage Ogden as a recipient of the Jean Pell musician scholarship, and in a clinic for gifted and talented students. I have also had the opportunity to preform the Djembe with an African drum circle for an Asian-American Cultural Celebration at the Peery’s Egyptian Theatre, for an event showcasing charter schools at the state capital, along side the Weber State University percussion ensemble, and for ballroom performances. Another great passion of mine is acting. I have booked work in various movies, commercials, voice over, and short films. I have studied acting with Rob Diamond and Sue Rowe. For the computer science side of things, I have participated in a couple of summer coding boot camps. </p>
+            </section>
+
+        <div class="menu">
+            <div class="links-wrapper">
+                <div class="nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="about.html">About Me</a>
+                </div>
+                <div class="nav-link">
+                    <a href="hobbies-&-career-goals.html">Hobbies & Career Goals</a>
+                </div>
+                <div class="nav-link">
+                    <a href="student-choice.html">My Music Taste</a>
+                </div>
+                <div class="nav-link">
+                    <a href="internet-questions.html">About The Internet</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>
